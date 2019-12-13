@@ -3,5 +3,21 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+}
 
+//parametric mixin for button
+.btn1(@bgColor,@width){
+    background-color: @bgColor;
+    width: @width;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 3px;
+    height: 4vh;
+
+    &:hover {
+        background-color: rgb(165, 165, 165);
+        color: black;
+    }
+    
 }
