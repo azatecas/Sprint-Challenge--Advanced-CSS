@@ -1,3 +1,6 @@
+initial commit
+
+
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
@@ -34,13 +37,36 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    adaptive websites are designed with fixed layouts in their design but feature coded breakpoints for certain screen sizes that way they accomodate the most common screen sizes but they dont accomodate all.
+		
+    Fully responsive websites incorporate fluid design. fluid design is adaptive in nature, it automatically ajust to screen sizes without specifying break points.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile first design is when the websited is built to primarily be seen on mobile screen sizes. the design philosophy is explicit in making it look best for mobile devices then as the screen size expands, so do the elements of the design.
+
+	Desktop First design is when the website is designed to primarily be used in desktops and mobile responsiveness is not prioritized.
+
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    font-size: 62.5% makes the rem units easier to calculate by a division of 10. so 10px would 1rem. this makes the text size responsive.
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    preprocessing is a tool that allows you to write shorter code and then that tool compiles it into extensive vanilla CSS
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    my favorite concept is writting short css in the preprocessor and outputting into a large vanilla CSS code that is well structured and neat.
+	
+    the concept that gives me the most trouble is debugging in the preprocessor, the terminal helps identify where the bugs are but sometimes i dont understand why changes aren't being implemented
+
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
