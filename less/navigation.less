@@ -5,32 +5,50 @@ nav {
     .flex();
     width: 100%;
     height: @nav-body;
-    background-color: red;
+    background-color: #f4f4f4;
+    align-items: center;
 
-    .nav-logo{
+
+    .nav-container {
         .flex();
-        align-items: center;
-        width:100%;
-        text-align: center;
+        max-width: 80rem;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 1vh;
 
-        h1 {
-            font-size: 2.4rem;
 
-        }//end of h1
+        .nav-logo{
+            .flex();
+            align-items: center;
+            width:100%;
+            text-align: center;
 
-    }//end of nav-log
-    .nav-links{
-        .flex();
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        width:50%;
+            h1 {
+                font-size: 3.6rem;
+                padding: 1vh 0;
 
-        border: 1px solid red;
+            }//end of h1
 
-        a{
-            width: 15%;
-        }
+        }//end of nav-log
+        .nav-links{
+            .flex();
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width:100%;
+            text-align: center;
+            padding: 1vh 10%;
 
-    }
-}
+            
+
+            a{
+                text-decoration: none;
+                font-size: 1.6rem;
+                width: 15%;
+                color: black;
+                
+            }//end a 
+
+        }//end nav-links
+    } //end nav container
+}//end nav
