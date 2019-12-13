@@ -3,7 +3,7 @@ nav {
     position:fixed;
     top: 0;
     .flex();
-    width: 100%;
+    .width();
     height: @nav-body;
     background-color: #f4f4f4;
     align-items: center;
@@ -12,7 +12,7 @@ nav {
     .nav-container {
         .flex();
         max-width: 80rem;
-        width: 100%;
+        .width();
         margin: 0 auto;
         padding-bottom: 1vh;
 
@@ -20,7 +20,7 @@ nav {
         .nav-logo{
             .flex();
             align-items: center;
-            width:100%;
+            .width();
             text-align: center;
 
             h1 {
@@ -35,9 +35,14 @@ nav {
             justify-content: center;
             align-items: center;
             flex-direction: row;
-            width:100%;
+            .width();
             text-align: center;
             padding: 1vh 10%;
+
+            @media @phone {
+                padding: 1vh 0;
+                width: 100%;
+            }
 
             
 
@@ -46,6 +51,10 @@ nav {
                 font-size: 1.6rem;
                 width: 15%;
                 color: black;
+
+                @media @phone {
+                    width: 19%;
+                }
                 
             }//end a 
 

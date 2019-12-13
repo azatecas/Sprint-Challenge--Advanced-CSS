@@ -1,10 +1,15 @@
 // Home Content
 
 .home {
+
+  
   
   
 
   .intro {
+    img{
+      border-radius: 10px;
+    }
 
     h2 {
       padding: 15px;
@@ -26,6 +31,23 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+
+      @media @phone{
+        .width();
+        margin:2vh 5%;
+        
+        border-radius: 10px;
+      }
+
+
+
+    }
+    //this removes two images from mobile
+    .sky, .launch {
+      @media @phone{
+        display: none;
+      }
     }
   }
 
@@ -48,8 +70,15 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      padding:2vh 5%;
+
+    }
+
     .walk-text {
       width: 50%;
+      
 
       h3 {
         margin-bottom: 10px;
@@ -61,12 +90,30 @@
 
       .btn {
         .btn1(black,30%);
+
+        @media @phone {
+          .width();
+          padding-top:.5vh;
+        }
+      }
+
+      @media @phone {
+        .width();
+        
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      
+
+      @media @phone {
+        .width();
+        margin:0;
+
+        
+      }
       
       img {
         width: 100%;
