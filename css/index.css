@@ -240,6 +240,7 @@ footer {
   width: 50%;
   border-radius: 20px;
   background-color: #dee2e6;
+  margin-bottom: 20vh;
 }
 .home .sign-in label {
   font-size: 2.6rem;
@@ -265,6 +266,11 @@ footer {
 .home .sign-in button:hover {
   background-color: #a5a5a5;
   color: black;
+}
+@media (max-width: 500px) {
+  .home .sign-in {
+    width: 100%;
+  }
 }
 .home .intro img {
   border-radius: 10px;
