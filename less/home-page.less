@@ -2,7 +2,42 @@
 
 .home {
 
+
+  .sign-in{
+    .flex();
+    flex-direction: column;
+    height: 50vh;
+    padding: 2vh 5%;
+    width:50%;
+    border-radius: 20px;
+    background-color: @main-border-color;
+    margin-bottom: 20vh;
+
+    label{
+      font-size: 2.6rem;
+    }
+    input {
+      height: 5vh;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      .btn1(black, 100%);
+      margin:2vh 0;
+    }
+
+    @media @phone {
+      .width();
+    }
+  }
+  
+  
+  
+
   .intro {
+    img{
+      border-radius: 10px;
+    }
 
     h2 {
       padding: 15px;
@@ -24,6 +59,22 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+
+      @media @phone{
+        .width();
+        margin:2vh 5%;        
+        border-radius: 10px;
+      }
+
+
+
+    }
+    //this removes two images from mobile
+    .sky, .launch {
+      @media @phone{
+        display: none;
+      }
     }
   }
 
@@ -37,6 +88,10 @@
     p {
       margin-top: 13px;
     }
+
+    @media @phone{
+      padding: 0 15px;
+    }
   }
 
   .walk {
@@ -46,8 +101,16 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      padding:2vh 5%;
+      margin-top:4vh;
+
+    }
+
     .walk-text {
       width: 50%;
+      
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +121,34 @@
       }
 
       .btn {
+        
+        .btn1(black,30%);
+
+        @media @phone {
+          .width();
+          
+          height: 8vh;
+          
+        }
+      }
+
+      @media @phone {
+        .width();
+        
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      
+
+      @media @phone {
+        .width();
+        margin:2vh 0;
+
+        
+      }
       
       img {
         width: 100%;

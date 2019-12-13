@@ -1,1 +1,63 @@
 // Navigation code here
+nav {
+    position:fixed;
+    top: 0;
+    .flex();
+    .width();
+    height: @nav-body;
+    background-color: #f4f4f4;
+    align-items: center;
+
+
+    .nav-container {
+        .flex();
+        max-width: 80rem;
+        .width();
+        margin: 0 auto;
+        padding-bottom: 1vh;
+
+
+        .nav-logo{
+            .flex();
+            align-items: center;
+            .width();
+            text-align: center;
+
+            h1 {
+                font-size: 3.6rem;
+                padding: 1vh 0;
+
+            }//end of h1
+
+        }//end of nav-log
+        .nav-links{
+            .flex();
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            .width();
+            text-align: center;
+            padding: 1vh 10%;
+
+            @media @phone {
+                padding: 1vh 0;
+                width: 100%;
+            }
+
+            
+
+            a{
+                text-decoration: none;
+                font-size: 1.6rem;
+                width: 15%;
+                color: black;
+
+                @media @phone {
+                    width: 19%;
+                }
+                
+            }//end a 
+
+        }//end nav-links
+    } //end nav container
+}//end nav
